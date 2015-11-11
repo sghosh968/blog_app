@@ -3,7 +3,9 @@ Rails.application.routes.draw do
   resources :commments
   resources :posts
 
-  root_to: 'dashboard#homepage'
+  root to: 'dashboard#homepage'
+
+  get '/user_dashboard' => 'dashboard#user_dashboard'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

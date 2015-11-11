@@ -1,5 +1,5 @@
 class DashboardController < ApplicationController
-
+  before_action :authenticate_user!, only: [:user_dashboard]
   def homepage
 
 
@@ -8,8 +8,6 @@ class DashboardController < ApplicationController
 
 
   def user_dashboard
-
-
 
   end
 
